@@ -92,7 +92,9 @@ c3_chart_internal_fn.getInterpolate = function (d) {
             'cardinal-open': d3.curveCardinalOpen,
             'cardinal-closed': d3.curveCardinalClosed,
             'monotone': d3.curveMonotoneX,
-            'step': d3.curveStep,
+			'step': d3.curveStep,
+			'step-before': d3.curveStepBefore,
+			'step-after': d3.curveStepAfter
         },
         type;
 

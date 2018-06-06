@@ -4603,9 +4603,7 @@
                 return;
             }
             $$.d3.select(this).selectAll('path').transition().duration($$.expandDuration(d.data.id)).attr("d", $$.svgArcExpanded).transition().duration($$.expandDuration(d.data.id) * 2).attr("d", $$.svgArcExpandedSub).each(function (d) {
-                if ($$.isDonutType(d.data)) {
-                    // callback here
-                }
+                if ($$.isDonutType(d.data)) ;
             });
         });
     };
