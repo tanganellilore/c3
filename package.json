@@ -1,6 +1,6 @@
 {
   "name": "c3",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "D3-based reusable chart library",
   "main": "c3.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "docs": "bundle exec middleman",
     "build": "npm run build:js && npm run build:css",
     "build:js": "npm run build:js:rollup && npm run build:js:uglify",
-    "build:js:rollup": "rollup -c > c3.js",
+    "build:js:rollup": "rollup -c",
     "build:js:uglify": "uglifyjs c3.js --compress --mangle --comments -o c3.min.js",
     "build:css": "npm run build:css:sass && npm run build:css:min",
     "build:css:sass": "node-sass src/scss/main.scss > c3.css",
@@ -68,7 +68,7 @@
     "node-sass": "^4.8.3",
     "node-static": "^0.7.9",
     "nodemon": "^1.11.0",
-    "rollup": "^0.59.0",
+    "rollup": "^0.61.0",
     "rollup-plugin-babel": "^3.0.3",
     "uglify-js": "^3.3.17",
     "watchify": "^3.11.0"
